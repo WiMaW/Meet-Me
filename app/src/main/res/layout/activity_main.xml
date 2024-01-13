@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/guest_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_guest_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                tools:text="Example Name"
+                android:fontFamily="sans-serif-light"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/guest_number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_guest_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:fontFamily="sans-serif-light"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/place">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:fontFamily="sans-serif-light"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <DatePicker
+            android:id="@+id/date_picker_event_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:fontFamily="sans-serif-light"/>
+
+        <CheckBox
+            android:id="@+id/check_box_confirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/confirmation"
+            android:fontFamily="sans-serif-light"/>
+
+        <DatePicker
+            android:id="@+id/date_picker_confirmation_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:fontFamily="sans-serif-light"
+            android:visibility="gone"/>
+
+        <Spinner
+            android:id="@+id/spinner_occasion"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light" />
+
+        <CheckBox
+            android:id="@+id/check_box_dress_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/dress_code"
+            android:fontFamily="sans-serif-light"/>
+        <CheckBox
+            android:id="@+id/check_box_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/check_box_theme"
+            android:fontFamily="sans-serif-light"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/check_box_theme">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:fontFamily="sans-serif-light"
+                android:visibility="gone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_invitation_preview"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/invitation_preview"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="4dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Meet Me</string>
+    <string name="guest_name">Guest Name</string>
+    <string name="guest_number">Guest Number</string>
+    <string name="place">Place</string>
+    <string name="date">Date</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="confirmation_date">Confirmation date</string>
+    <string name="dress_code">Dress Code</string>
+    <string name="theme">Theme</string>
+    <string name="invitation_preview">Invitation Preview</string>
+    <string name="send_invitation">Send Invitation</string>
+    <string name="check_box_theme">Theme</string>
+</resources>
